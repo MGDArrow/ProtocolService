@@ -9,5 +9,5 @@ export const router = createRouter({
 
 // eslint-disable-next-line consistent-return
 router.beforeEach(async to => {
-  if (!await useUserStore().userGet() && to.name !== 'Login') return { name: 'Login' };
+  if (!await useUserStore().userGet() && to.name !== 'Login' && to.name !== 'Register') return { name: 'Login' };
 });
