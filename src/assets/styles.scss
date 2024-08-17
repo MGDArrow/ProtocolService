@@ -1,0 +1,169 @@
+@import '@/assets/reset';
+@import '@/assets/variables';
+@import '@/assets/classes';
+@import 'https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap';
+.protocol-service {
+  width: 100vw;
+  height: 100dvh;
+  padding: 1dvh;
+  color: $col-white;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: Oswald, sans-serif;
+  background: $col-black;
+  user-select: none;
+  & h1 {
+    width: 100%;
+    padding: 1dvh;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  & input {
+    width: 100%;
+    height: 6dvh;
+    padding: 0.7dvh;
+    color: $col-white;
+    font-size: 1.2em;
+    outline: none;
+  }
+}
+.persona__edit{
+  width: 100%;
+  & > input {
+    margin-bottom: 1dvh;
+  }
+  & > span {
+    font-size: 1.2rem;
+  }
+}
+.inputgroupe__date{
+  display: flex;
+  gap: 2vw;
+  margin-bottom: 1dvh;
+  & > input {
+    width: 25%;
+    text-align: center;
+    &:last-child{
+      flex: 1;
+    }
+  }
+}
+.persona {
+  & h1 {
+    font-size: 1.2rem;
+  }
+  &__photo{
+    & img {
+      margin: 0 auto;
+    }
+  }
+  &__item {
+    width: 100%;
+    margin-top: 0.7dvh;
+  }
+  &__title {
+    width: 100%;
+    height: 8dvh;
+    padding: 1dvh;
+    line-height: calc(8dvh / 3);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__body {
+    display: flex;
+    padding: 0.7dvh;
+    & > div {
+      &:first-child {
+        align-self: center;
+        width: 25%;
+      }
+      &:last-child {
+        flex: 1;
+        padding-left: 0.7dvh;
+      }
+    }
+  }
+  &__info {
+    margin-bottom: 1dvh;
+    padding-left: 0.7dvh;
+    & > div {
+      display: flex;
+      width: 100%;
+      & > span {
+        &:first-child{
+          align-self: center;
+          width: 40%;
+        }
+        &:last-child {
+          flex: 1;
+          align-self: center;
+          font-weight: 300;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &__gifts{
+    & h2 {
+      font-size: 1.5em;
+    }
+  }
+  &__buttons{
+    & > div{
+      margin: 0.5dvh 0;
+    }
+  }
+  &__history{
+    & .gift__item{
+      &:last-child{
+        margin-bottom: 1dvh;
+      }
+    }
+  }
+}
+.inputgroupe__search{
+  display: flex;
+  gap: 1vw;
+  width: 100%;
+  & > div {
+    height: 100%;
+    &:first-child{
+      flex: 1;
+    }
+    &:last-child{
+      width: 6dvh;
+      height: 6dvh;
+      & > .button {
+        height: 6dvh;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+.gift {
+  width: 100%;
+  &__item{
+    margin-top: 1dvh;
+  }
+  &__title{
+    display: flex;
+    flex-wrap: wrap;
+    & > div, a{
+      &:first-child{
+        width: 70%;
+        height: 6dvh;
+        font-size: 1.2rem;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      &:nth-child(2){
+        width: 30%;
+        font-size: 2rem;
+      }
+      &:nth-child(3){
+        width: 100%;
+        margin-top: 0.5dvh;
+      }
+    }
+  }
+}

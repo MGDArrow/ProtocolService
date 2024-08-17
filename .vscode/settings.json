@@ -1,0 +1,14 @@
+{
+  "editor.formatOnSave": true, // Форматирование после сохранения файла
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Форматирование кода с помощью prettier
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "always"
+  },
+  "stylelint.validate": ["css", "scss", "vue"],
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, vite.config.ts, cz.config.cjs, .gitignore",
+    "eslint.config.js": ".prettierrc, .prettierignore, .stylelintrc.json, .stylelintcache, .stylelintignore, tsconfig.json"
+  }
+}

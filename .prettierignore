@@ -1,0 +1,6 @@
+src
+**/*.vue
+
+eslint.config.js
+vite.config.ts
+cz.config.cjs
